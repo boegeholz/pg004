@@ -1,7 +1,7 @@
 ﻿@page
 @model NicolasModel
 @{
-    ViewData["Title"] = "Nicolas";
+ViewData["Title"] = "Nicolas";
 }
 
 <div class="jumbotron text-center">
@@ -12,62 +12,35 @@
         <h1>Nicolas</h1>
         <p>Esta página é do Nicolas</p>
         <p>Eu sou o Nicolas, estou fazendo um curso com intuito de aprender a programa</p>
-            <p>Tenho 15 anos sou de ivoti mas sou natural de porto alegre</p>
-            <body>
-    <div class="center">
-        <div>Calculadora
-       </div>
-       <div>
-            <input id="numeroA" type="text" value="">   
-            </div>
-            <div>
-            <input id="numeroB" type="text" value="">   
-            <input type="button" onclick="myFunction()" value="Botao">   
-            </div>
-            
-            
-            <div>
-                <label for ="operacao">Escolha uma operacao</label>
-                <select name="operacao" id="operacao">
+        <p>Tenho 15 anos sou de ivoti mas sou natural de porto alegre</p>
+
+        <body>
+            <div class="center">
+                <div>Calculadora
+                </div>
+                <div>
+                    <input id="numeroA" type="text" value="">
+                </div>
+                <div>
+                    <input id="numeroB" type="text" value="">
+                    <input type="button" onclick="myFunction()" value="Botao">
+                </div>
+
+
+                <div>
+                    <label for="operacao">Escolha uma operacao</label>
+                    <select name="operacao" id="operacao">
                         <option value="SOMA">+</option>
-                        <option value="SUBTRACAO">-</option> 
+                        <option value="SUBTRACAO">-</option>
                         <option value="MULTIPLICACAO">*</option>
-                        <option value="DIVISAO">/</option> 
-                </select>
+                        <option value="DIVISAO">/</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="resultado" disabled="true" type="text" value="">
+                </div>
+                <br>
+                <a href="./index.html">Voltar</a>
             </div>
-            <div>
-                <input id="resultado" disabled="true" type="text"value="">
-            </div>
-            <br>
-            <a href="./index.html">Voltar</a>
-        </div>
-    </div>
-</body>
-<script>
-    function myFunction(){
-        let operacao = document.getElementById("operacao").value;
-        let valorA = Number(document.getElementById("numeroA").value)
-        let valorB = Number(document.getElementById("numeroB").value)
-        
-        document.getElementById("resultado").value= calculo(valorA,valorB,operacao);
-        
-    }    
-    function calculo(numA,numB,operacao) {
-        if (operacao == "SOMA") {
-            return  numA + numB;
-        }
-        if (operacao == "SUBTRACAO") {
-            return  numA - numB;
-        }
-        if (operacao == "MULTIPLICACAO") {
-            return  numA * numB;
-        }
-        if (operacao == "DIVISAO") {
-            return  numA / numB;
-        }
-    }
-</script>
- 
     </div>
 </div>
-
