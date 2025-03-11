@@ -1,7 +1,7 @@
 ﻿@page
 @model NicolasModel
 @{
-ViewData["Title"] = "Nicolas";
+    ViewData["Title"] = "Nicolas";
 }
 
 <div class="jumbotron text-center">
@@ -11,22 +11,20 @@ ViewData["Title"] = "Nicolas";
         </a>
         <h1>Nicolas</h1>
         <p>Esta página é do Nicolas</p>
-        <p>Eu sou o Nicolas, estou fazendo um curso com intuito de aprender a programa</p>
-        <p>Tenho 15 anos sou de ivoti mas sou natural de porto alegre</p>
+        <p>Eu sou o Nicolas, estou fazendo um curso com intuito de aprender a programar.</p>
+        <p>Tenho 15 anos, sou de Ivoti, mas sou natural de Porto Alegre.</p>
         <div class="center">
-            <div>Calculadora
-            </div>
+            <div>Calculadora</div>
             <div>
                 <input id="numeroA" type="text" value="">
             </div>
             <div>
                 <input id="numeroB" type="text" value="">
-                <input type="button" onclick="myFunction()" value="Botao">
+                <input type="button" onclick="myFunction()" value="Calcular">
             </div>
 
-
             <div>
-                <label for="operacao">Escolha uma operacao</label>
+                <label for="operacao">Escolha uma operação:</label>
                 <select name="operacao" id="operacao">
                     <option value="SOMA">+</option>
                     <option value="SUBTRACAO">-</option>
@@ -34,6 +32,7 @@ ViewData["Title"] = "Nicolas";
                     <option value="DIVISAO">/</option>
                 </select>
             </div>
+
             <div>
                 <input id="resultado" disabled="true" type="text" value="">
             </div>
@@ -42,3 +41,15 @@ ViewData["Title"] = "Nicolas";
         </div>
     </div>
 </div>
+
+@* CSS para tornar as letras azuis *@
+<style>
+    /* Definindo a cor do texto para azul */
+    body {
+        color: blue;
+    }
+
+    label, input, div {
+        font-family: Arial, sans-serif;
+    }
+</style>
