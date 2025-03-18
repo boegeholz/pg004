@@ -34,6 +34,12 @@
   border: 2px solid white;
 }
 
+.jumbotron .img-redimensionavel {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
 .jumbotron .lang-logo img {
   max-width: 100%;
 }
