@@ -8,17 +8,48 @@
         <a href="/" class="lang-logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Escudo_do_Sport_Club_Internacional.svg/480px-Escudo_do_Sport_Club_Internacional.svg.png">
         </a>
-        <h1>Augusto</h1>
+        <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Augusto</h1>
         
-        <h2>Olá, tudo bem? Espero que sim!</h2>
+        <h2 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Olá, tudo bem? Espero que sim!</h2>
         <br>
         <br>
-        <h3>Prazer, meu nome é Augusto no momento possuo 16 anos.</h3>
-        <h3>Eu gosto de jogar, tanto jogos elétronicos, quanto jogos de carta, etc.</h3>
-        <h3>O time de futebol ao qual eu torço é o Internacional.</h3>
+        <h3 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Prazer, meu nome é Augusto no momento possuo 16 anos.</h3>
+        <h3 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Eu gosto de jogar, tanto jogos elétronicos, quanto jogos de carta, etc.</h3>
+        <h3 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">O time de futebol ao qual eu torço é o Internacional.</h3>
         <br>
         <br>
-        <button type="button" class="btn btn-primary">Avançar para minha página</button>
+        <br>
+        <br>
+        <div>
+            <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Calculadora</h1>
+        </div>
+
+            <div>
+                <input style="Color:Black; Width:300px; text-align:Center" id="numeroA" type="text" value="" placeholder="Digite um número">
+            </div>
+
+            <div>
+                <input style="Color:Black; Width:300px; text-align:Center" id="numeroB" type="text" value="" placeholder="Digite um número">
+            </div>
+            
+            <div>
+                <label style="Color:White" for="operacao"><h3>Escolha uma operação</h3></label><br>
+                <select style="Color:Black" name="operacao" id="operacao">
+                    <option value="SOMA">+</option>
+                    <option value="SUBTRACAO">-</option>
+                    <option value="MULTIPLICACAO">*</option>
+                    <option value="DIVISAO">/</option>
+                </select>
+            </div>
+
+            <div>
+                <button style="Color:White" type="button" class="btn btn-primary" onclick="myFunction()">Calcular</button>
+            </div>
+
+            <div>
+                <input style="Color:Black" id="resultado" disabled="true" type="text" value="">
+            </div>
+            <br>
+        </div>
     </div>
 </div>
-
