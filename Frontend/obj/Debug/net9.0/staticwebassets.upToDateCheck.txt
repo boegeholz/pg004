@@ -1,5 +1,0 @@
-C:\Users\boegeholz\OneDrive\Documents\Heroku_Projects\dotnet-getting-started\Frontend\wwwroot\js\site.js
-C:\Users\boegeholz\OneDrive\Documents\Heroku_Projects\dotnet-getting-started\Frontend\wwwroot\css\site.css
-wwwroot\css\site.css
-wwwroot\js\site.js
-wwwroot\lang-logo.png
