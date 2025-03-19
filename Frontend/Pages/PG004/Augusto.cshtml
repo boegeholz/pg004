@@ -20,36 +20,154 @@
         <br>
         <br>
         <br>
-        <div>
+        <div class="jumbotron">
             <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;">Calculadora</h1>
-        </div>
-
-            <div>
-                <input style="Color:Black; Width:300px; text-align:Center" id="numeroA" type="text" value="" placeholder="Digite um número">
+            <div class="calculator">
+                <input style="Color:Black; Width:400px; Height:50px; text-align:Center; font-size: 24px;" id="display" type="text" value="" disabled>
+                <div class="calculator-buttons">
+                    <button class="btn btn-dark calc-btn" onclick="clearDisplay()" id="btn-clear">C</button>
+                    <button class="btn btn-dark calc-btn" onclick="deleteLast()" id="btn-delete">DEL</button>
+                    <button class="btn btn-dark calc-btn" onclick="setOperation('PERCENT')" id="btn-percent">%</button>
+                    <button class="btn btn-dark calc-btn" onclick="setOperation('DIVISAO')" id="btn-divide">/</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('7')" id="btn-7">7</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('8')" id="btn-8">8</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('9')" id="btn-9">9</button>
+                    <button class="btn btn-dark calc-btn" onclick="setOperation('MULTIPLICACAO')" id="btn-multiply">*</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('4')" id="btn-4">4</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('5')" id="btn-5">5</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('6')" id="btn-6">6</button>
+                    <button class="btn btn-dark calc-btn" onclick="setOperation('SUBTRACAO')" id="btn-minus">-</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('1')" id="btn-1">1</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('2')" id="btn-2">2</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('3')" id="btn-3">3</button>
+                    <button class="btn btn-dark calc-btn" onclick="setOperation('SOMA')" id="btn-plus">+</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber('0')" id="btn-0" style="grid-column: span 2;">0</button>
+                    <button class="btn btn-dark calc-btn" onclick="appendNumber(',')" id="btn-comma">,</button>
+                    <button class="btn btn-dark calc-btn" onclick="calculateResult()" id="btn-equals">=</button>
+                </div>
             </div>
-
-            <div>
-                <input style="Color:Black; Width:300px; text-align:Center" id="numeroB" type="text" value="" placeholder="Digite um número">
-            </div>
-            
-            <div>
-                <label style="Color:White" for="operacao"><h3>Escolha uma operação</h3></label><br>
-                <select style="Color:Black" name="operacao" id="operacao">
-                    <option value="SOMA">+</option>
-                    <option value="SUBTRACAO">-</option>
-                    <option value="MULTIPLICACAO">*</option>
-                    <option value="DIVISAO">/</option>
-                </select>
-            </div>
-
-            <div>
-                <button style="Color:White" type="button" class="btn btn-primary" onclick="myFunction()">Calcular</button>
-            </div>
-
-            <div>
-                <input style="Color:Black" id="resultado" disabled="true" type="text" value="">
-            </div>
-            <br>
         </div>
     </div>
 </div>
+
+<script>
+    let numeroA = '';
+    let numeroB = '';
+    let operacao = '';
+
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        const button = document.getElementById(`btn-${key}`);
+        if (button) {
+            button.classList.add('highlight');
+            setTimeout(() => button.classList.remove('highlight'), 200);
+        }
+        if (!isNaN(key) || key === ',') {
+            appendNumber(key);
+        } else if (key === '+') {
+            setOperation('SOMA');
+        } else if (key === '-') {
+            setOperation('SUBTRACAO');
+        } else if (key === '*') {
+            setOperation('MULTIPLICACAO');
+        } else if (key === '/') {
+            setOperation('DIVISAO');
+        } else if (key === '%') {
+            setOperation('PERCENT');
+        } else if (key === 'Enter') {
+            calculateResult();
+        } else if (key === 'c' || key === 'C') {
+            clearDisplay();
+        } else if (key === 'Backspace') {
+            deleteLast();
+        }
+    });
+
+    function appendNumber(number) {
+        if (operacao === '') {
+            numeroA += number;
+            document.getElementById('display').value = numeroA;
+        } else {
+            numeroB += number;
+            document.getElementById('display').value = numeroB;
+        }
+    }
+
+    function setOperation(op) {
+        if (numeroA !== '') {
+            operacao = op;
+        }
+    }
+
+    function clearDisplay() {
+        numeroA = '';
+        numeroB = '';
+        operacao = '';
+        document.getElementById('display').value = '';
+    }
+
+    function deleteLast() {
+        if (operacao === '') {
+            numeroA = numeroA.slice(0, -1);
+            document.getElementById('display').value = numeroA;
+        } else {
+            numeroB = numeroB.slice(0, -1);
+            document.getElementById('display').value = numeroB;
+        }
+    }
+
+    function calculateResult() {
+        let resultado;
+        const numA = parseFloat(numeroA);
+        const numB = parseFloat(numeroB);
+
+        switch (operacao) {
+            case 'SOMA':
+                resultado = numA + numB;
+                break;
+            case 'SUBTRACAO':
+                resultado = numA - numB;
+                break;
+            case 'MULTIPLICACAO':
+                resultado = numA * numB;
+                break;
+            case 'DIVISAO':
+                resultado = numA / numB;
+                break;
+            case 'PERCENT':
+                resultado = numA * (numB / 100);
+                break;
+        }
+
+        document.getElementById('display').value = resultado;
+        numeroA = resultado.toString();
+        numeroB = '';
+        operacao = '';
+    }
+</script>
+
+<style>
+    .calculator {
+        display: inline-block;
+        text-align: center;
+    }
+    .calculator-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .calculator-buttons button {
+        padding: 20px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        border: 1px solid red;
+    }
+    .calculator-buttons button:focus, .calculator-buttons button.highlight {
+        color: white;
+        background-color: red;
+    }
+    .calculator-buttons button:hover {
+        background-color: red;
+    }
+</style>
