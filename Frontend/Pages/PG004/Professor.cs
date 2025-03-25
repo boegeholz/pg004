@@ -15,4 +15,8 @@ public class ProfessorModel : PageModel
     {
 
     }
+    public void OnPost(int id, string example)
+    {
+        
+    }
 }
