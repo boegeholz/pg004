@@ -17,45 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GettingStarted.Frontend
 build_property.RootNamespace = GettingStarted.Frontend
-build_property.ProjectDir = C:\Users\boegeholz\source\repos\pg004\Frontend\
+build_property.ProjectDir = C:\Users\Estudante\Documents\GitHub\pg004\Frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\boegeholz\source\repos\pg004\Frontend
+build_property.MSBuildProjectDirectory = C:\Users\Estudante\Documents\GitHub\pg004\Frontend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/Error.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/Index.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/PG004/Index.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Arthur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcQXJ0aHVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Augusto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcQXVndXN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Bruna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcQnJ1bmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Elieds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcRWxpZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Felipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcRmVsaXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/PG004/Professor.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Matheus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcTWF0aGV1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Nicolas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcTmljb2xhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/Professor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcUHJvZmVzc29yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/ViniciusHippler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcVmluaWNpdXNIaXBwbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/PG004/ViniciusRafael.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEcwMDRcVmluaWNpdXNSYWZhZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/_ViewImports.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/_ViewStart.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/boegeholz/source/repos/pg004/Frontend/Pages/Shared/_Layout.cshtml]
+[C:/Users/Estudante/Documents/GitHub/pg004/Frontend/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uq42hxt8r2

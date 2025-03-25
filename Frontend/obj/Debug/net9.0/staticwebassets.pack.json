@@ -1,19 +1,47 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\boegeholz\\OneDrive\\Documents\\Heroku_Projects\\dotnet-getting-started\\Frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
       "PackagePath": "staticwebassets\\Frontend.14s8j19ep6.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\boegeholz\\OneDrive\\Documents\\Heroku_Projects\\dotnet-getting-started\\Frontend\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\boegeholz\\OneDrive\\Documents\\Heroku_Projects\\dotnet-getting-started\\Frontend\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\GoD1.jpg",
+      "PackagePath": "staticwebassets\\imagens\\GoD1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\GoD2.jpg",
+      "PackagePath": "staticwebassets\\imagens\\GoD2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\GoD3.jpg",
+      "PackagePath": "staticwebassets\\imagens\\GoD3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\GoDA.jpg",
+      "PackagePath": "staticwebassets\\imagens\\GoDA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\god.jpg",
+      "PackagePath": "staticwebassets\\imagens\\god.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\imagem_felipe.png",
+      "PackagePath": "staticwebassets\\imagens\\imagem_felipe.png"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\imagens\\plato.jpg",
+      "PackagePath": "staticwebassets\\imagens\\plato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\boegeholz\\OneDrive\\Documents\\Heroku_Projects\\dotnet-getting-started\\Frontend\\wwwroot\\lang-logo.png",
+      "Id": "C:\\Users\\Estudante\\Documents\\GitHub\\pg004\\Frontend\\wwwroot\\lang-logo.png",
       "PackagePath": "staticwebassets\\lang-logo.png"
     },
     {
