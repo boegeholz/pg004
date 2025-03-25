@@ -17,12 +17,11 @@
             <div>Calculadora</div>
             <div>
                 <input id="numeroA" type="text" value="">
+                <input id="numeroB" type="text" value=""/>
+                <input type="button" onclick="myFunction()" value="Calcular"/>
+                <input id="resultado" disabled="true" type="text" value=""/>
             </div>
-            <div>
-                <input id="numeroB" type="text" value="">
-                <input type="button" onclick="myFunction()" value="Calcular">
-            </div>
-
+            
             <div>
                 <label for="operacao">Escolha uma operação:</label>
                 <select name="operacao" id="operacao">
@@ -32,24 +31,8 @@
                     <option value="DIVISAO">/</option>
                 </select>
             </div>
-
-            <div>
-                <input id="resultado" disabled="true" type="text" value="">
-            </div>
             <br>
-            <a href="./index.html">Voltar</a>
+            <a href="https://pg004-334a0479d625.herokuapp.com/">Voltar</a>
         </div>
     </div>
 </div>
-
-@* CSS para tornar as letras azuis *@
-<style>
-    /* Definindo a cor do texto para azul */
-    body {
-        color: blue;
-    }
-
-    label, input, div {
-        font-family: Arial, sans-serif;
-    }
-</style>
