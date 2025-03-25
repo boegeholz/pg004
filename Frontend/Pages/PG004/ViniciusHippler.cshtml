@@ -1,16 +1,17 @@
-﻿@page
-@model ViniciusHipplerModel
-@{
-    ViewData["Title"] = "Vinícius Hippler";
-}
-<h1>Vinícius Hippler</h1>
-<p>Esta página é do Vinícius Hippler</p>
-    <div id="fundo">
-        <div class="container">
-            <h1>Página do Vini</h1>
-            Meu nome é Vinícius <br>
-            Idade = 15 anos
-        </div>
-    </div>
-</html>
+@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
 
+@section Styles {
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+
+<div class="container text-center mt-5">
+    <h1>Meus Links</h1>
+    <p>Conecte-se comigo através dos links abaixo:</p>
+    
+    <div class="list-group mt-4">
+        <a href="https://github.com/viniciushippler" class="list-group-item list-group-item-action" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/viniciushippler" class="list-group-item list-group-item-action" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/viniciushippler" class="list-group-item list-group-item-action" target="_blank">Instagram</a>
+        <a href="mailto:contato@viniciushippler.com" class="list-group-item list-group-item-action">Email</a>
+    </div>
+</div>
